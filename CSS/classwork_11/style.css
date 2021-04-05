@@ -1,0 +1,32 @@
+.fon_yellow {
+    background: teal;
+}
+
+li {
+    font-size: 12px;
+}
+
+.second_class {
+    border: 1px solid black;
+}
+
+.fon_yellow.second_class.sun.help {
+    background: yellow;
+}
+
+.main_menu .sun {
+    background: pink;
+}
+
+.primer div,
+.primer p {
+    background: red;
+}
+
+#my_id {
+    background: yellow;
+}
+
+[data-dais="name"] {
+    background: pink;
+}

@@ -1,0 +1,72 @@
+/* Базовые настройки страницы */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* Универсальные стили */
+.left, .ul_li li {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.ul_li {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.ul_li li {
+    padding: 10px 15px;
+}
+
+.b-r li {
+    border-right: 1px solid #dadada;
+}
+
+.b-r li:last-child {
+    border-right: 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+} 
+
+
+/* top_menu */
+.top_menu {
+    background-color: #f7f7f7;
+    display: inline-block;
+    width: 100%;
+}
+
+.ul_li i {
+    margin-right: 10px;
+}
+
+.icon_msg {
+    position: relative;
+}
+
+.msg {
+    position: absolute;
+    top: -7px;
+    right: 8px;
+    background-color: red;
+    width: 13px;
+    height: 13px;
+    text-align: center;
+    color: white;
+    font-size: 9px;
+    line-height: 1.5;
+    border-radius: 50%;
+}
