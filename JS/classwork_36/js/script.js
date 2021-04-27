@@ -25,17 +25,12 @@ let car = {
 
 let mb = Object.create(car);
 
-mb = {
-    marka: "Мерс",
-    year: "2021"
-};
-
 // mb.__proto__ = car;
 
 // Object.setPrototypeOf(mb, car);
 
 
 
-console.log(mb.modal);
+console.log(mb.kuzov);
 
 mb.modal();
