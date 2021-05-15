@@ -1,12 +1,12 @@
 (function () {
 
-    // 'use strict';
+    'use strict';
 
     // function getThis(a, b) {
-    //     // console.log(this);
+    //     console.log(this);
 
     //     function arif() {
-    //         // console.log(this);
+    //         console.log(this);
 
     //         return a + b;
     //     }
@@ -52,7 +52,7 @@
 
     // function hi(age) {
 
-    //     console.log(this);
+    //     // console.log(this);
     //     console.log(this.name);
     //     console.log(age);
 
