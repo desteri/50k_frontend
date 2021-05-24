@@ -36,4 +36,48 @@
 
     });
 
+    const   search = document.querySelector("[name = 'search']"),
+            btnSearch = document.querySelector(".search button"),
+            searchRes = document.querySelector(".search__result");
+
+    btnSearch.addEventListener('click', (event) => {
+
+        event.preventDefault();
+
+        const request_ = new XMLHttpRequest();
+
+        request_.open("GET", "js/search.php?query=" + search.value);
+
+        searchRes.innerHTML = "Данные отправлены!"; 
+
+        // request.setRequestHeader("Content-type", "application/json; charset=UTF-8");
+        request_.send();
+
+        request_.addEventListener('load', () => {
+
+            if (request_.status === 200) {
+                
+                const data = JSON.parse(request_.response);
+                let createUl = document.createElement('ul');
+
+                for (let i = 0; i < data.length; i++) {
+                    
+                    createUl.innerHTML += `<li>
+                                            <a href="${data[i].href}">${data[i].text}</a>
+                                            </li>`;
+    
+                }
+
+                searchRes.innerHTML = createUl.outerHTML;
+            
+            } else {
+
+                console.log('Error!');
+
+            }
+
+        });
+
+    });
+
 }());
