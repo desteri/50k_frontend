@@ -1,5 +1,3 @@
-const axios = require("axios");
-
 (function () {
 
     'use strict';
@@ -9,7 +7,6 @@ const axios = require("axios");
     // .then(res => console.log(res));
 
     axios.get("http://localhost:3000/products")
-    .then(data => console.log(data));
-
+    .then(data => console.log(data.data));
 
 }());
